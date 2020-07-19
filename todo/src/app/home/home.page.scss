@@ -1,0 +1,46 @@
+.login-header{
+  background: var(--theme-color);
+}
+
+[heading-column-1r]{
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+[big-heading]{
+  font-family: "Heebo-Bold" !important;
+  font-size: 30px !important;
+  color: var(--ion-color-gray);
+}
+
+ion-content{
+  --background: #fafafa;
+}
+
+[transparent]{
+  --background: transparent;
+}
+
+ion-input{
+  --color: #000;
+  --padding-bottom: 15px;
+  --padding-top: 15px;
+  --padding-start: 5px;
+  font: size 15px;
+  text-indent: 1px;
+  padding-left: 10px !important;
+}
+
+ion-item{
+  --highlight-color-focused: transparent;
+  --highlight-height: 0;
+  --highlight-color-invalid:#000;
+  --highlight-color-valid:#ddd;
+  --min-height: 65px;
+  --padding-start:0;
+}
+
+[linespace]{
+  height: 30px;
+}

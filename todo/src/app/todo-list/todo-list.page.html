@@ -1,0 +1,34 @@
+<div>
+  <ion-item>
+    <ion-input 
+      type="text"
+      placeholder="What need to be done"
+      [(ngModel)]="todoTitle"
+    >
+    </ion-input>
+    <ion-button (click)="addTodo()">Add</ion-button>
+  </ion-item>
+</div>
+<div class = "todo-item"*ngFor="let todo of todos">
+  
+      <ion-item>
+        <ion-checkbox [(ngModel)]="todo.completed"></ion-checkbox>
+        
+          <ion-label class="" [ngClass]="{'completed' : todo.completed}"> 
+            {{ todo.title }}
+          </ion-label>
+       
+        <div float-right (click)="deleteTodo(todo.id)">
+          <ion-button>Delete</ion-button>
+        </div>
+      </ion-item>
+    
+</div>
+
+
+
+
+  
+      
+   
+
